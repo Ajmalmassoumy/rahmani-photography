@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Booking</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Rahmani Photography</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking-container">
+        <h2>Book Your Photography Session</h2>
+
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <form id="bookingForm">
+                <label for="service">Select Service:</label>
+                <select id="service" required>
+                    <option value="event-photography">Event Photography</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="wedding">Wedding Photography</option>
+                    <option value="product">Product Photography</option>
+                </select>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" required>
+
+                <label for="specialRequest">Special Requests/Notes:</label>
+                <textarea id="specialRequest" rows="4" placeholder="Add any specific requests or details..."></textarea>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+
+        <!-- Booking Confirmation -->
+        <div class="confirmation" id="confirmation" style="display: none;">
+            <h3>Booking Confirmed</h3>
+            <p id="bookingDetails"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Photography. All rights reserved.</p>
+    </footer>
+
+    <script src="js/booking.js"></script>
+</body>
+</html>

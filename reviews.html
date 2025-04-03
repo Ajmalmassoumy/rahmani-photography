@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Rahmani Photography</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="reviews-container">
+    <h2>What People Are Saying</h2>
+    
+    <!-- Reviews Form -->
+    <div class="reviews-form">
+        <h3>Leave Your Review</h3>
+        <form id="reviewForm">
+            <!-- Name Field (Stacked) -->
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+            <!-- Comments Section (Stacked) -->
+            <textarea id="review" placeholder="Your Review" rows="5" required></textarea>
+            
+            <!-- Star Rating (Stacked) -->
+            <div class="star-rating">
+                <label for="rating">Your Rating:</label>
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+                <input type="hidden" id="rating" name="rating" value="0" required>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+    
+    <!-- Display Reviews -->
+    <div class="reviews-display" id="reviewsDisplay">
+        <!-- Reviews will be displayed here -->
+    </div>
+    
+    <!-- Link to JavaScript File -->
+    <script src="js/reviews.js"></script>
+</section>
+</body>
+</html>
